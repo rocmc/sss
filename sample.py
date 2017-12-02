@@ -1,117 +1,19 @@
-1
-f = "x= %0.5f, y= %5.2f" % (1.234567, 9.87654321)
-2
-print(f)
-3
-print()
-4
-print("=" * 100)
-5
+num = [1, 2, 3, 4]  # 리스트선언
+num.append(5); # 리스트 뒤에 추가
+print(num)
+num.insert(0, 0)  # 리스트 사이에 삽입 (몇번째 인덱스, 어떤값)
+print(num)
+num.extend([6, 7]) # 기존의 리스트에 extend(내용을 추가)
+print(num)
 
-6
-i = 123
-7
-f = 1.14159
-8
-s = 'python'
-9
-s1 = "python-1"
-10
-print("i=%d, f=%f, s=%s, s1=%s1" % (i, f, s, s1))
-11
+color = ['red', 'blue', 'yellow', 'red']
+print(color.index('red')) # red는 몇번째 인덱스에 있을까요  = 0
+print(color.index('red', 1)) # 시작점을주면 시작점을 기점으로 찾습니다 = 3
+print(color.count('red')) # red가 몇개 존재하나요 = 2
+print(color.pop()) # 리스트 맨뒤의 값을 뻅니다. = red
 
-12
-print()
-13
-print("=" * 100)
-14
+color.sort() # 오름차순 정렬 ['blue', 'red', 'yellow']
+print(color)
+color.remove('blue') # 해당값 제거 ['red', 'yellow']
+print(color)
 
-15  # dictionary
-16
-p = {'name': 'HanSaLam', 'age': 28}
-17
-print("name=%(name)s age=%(age)d" % p)
-18
-
-19
-print()
-20
-print("=" * 100)
-21
-
-22
-print("i={0} f={1} s={2} s1={3}".format(123, 1.14159, 12345, 'python', 'python-1'))
-23
-
-24
-print()
-25
-
-26  # int, float, bool, None: 파이썬의 자료형
-27
-x = 100
-28
-y = 200
-29
-print(x + y)
-30
-
-31
-x = "100"
-32
-y = "200"
-33
-print(x + y)
-34
-
-35
-print(int(7.5))
-36
-
-37
-print(2e5)
-38
-
-39
-print(float("1.6"))
-40
-
-41
-
-42
-
-43
-print(bool(0))
-44
-
-45
-print(bool(-1))
-46
-
-47
-print(bool("false"))
-48
-
-49
-a = None
-50
-print(a is None)
-51
-
-52
-print(0b1010)
-53
-
-54
-print(type(123))
-55
-
-56
-print(7 / 4)
-57
-
-58
-print(7 // 4)
-59
-
-60
