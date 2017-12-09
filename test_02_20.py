@@ -1,0 +1,1 @@
+#coding: euc-kr
